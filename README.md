@@ -10,12 +10,13 @@ pgcli plugin for Heroku CLI
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
+* [Development](#development)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g heroku-pgcli
+$ heroku plugins:install heroku-pgcli # from npmjs.com
+$ heroku plugins:install https://github.com/techgaun/heroku-pgcli.git # from github
 $ heroku pgcli DATABASE_URL --app some-good-app
 Running pgcli on DATABASE_URL...
 $ heroku pgcli --help
