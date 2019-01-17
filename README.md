@@ -39,3 +39,6 @@ EXAMPLE
 
 - `heroku plugins:link`
 - `heroku pgcli`
+- `HEROKU_DEBUG=1` to print debugging statements
+- `HEROKU_DEBUG_HEADERS=1` to also get the headers
+- `DEBUG=*`` to get lots of internal debug output
