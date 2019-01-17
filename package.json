@@ -35,7 +35,11 @@
   ],
   "homepage": "https://github.com/techgaun/heroku-pgcli",
   "keywords": [
-    "oclif-plugin"
+    "oclif-plugin",
+    "heroku",
+    "heroku-plugin",
+    "postgresql",
+    "pgcli"
   ],
   "license": "MIT",
   "oclif": {
