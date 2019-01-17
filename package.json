@@ -1,0 +1,53 @@
+{
+  "name": "heroku-pgcli",
+  "description": "pgcli plugin for Heroku CLI",
+  "version": "0.1.0",
+  "author": "techgaun @techgaun",
+  "bugs": "https://github.com/techgaun/heroku-pgcli/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^2",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "globby": "^8",
+    "ts-node": "^7",
+    "tslint": "^5",
+    "typescript": "^3.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/yarn.lock"
+  ],
+  "homepage": "https://github.com/techgaun/heroku-pgcli",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "oclif-example",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "techgaun/heroku-pgcli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
