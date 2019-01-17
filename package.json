@@ -5,11 +5,13 @@
   "author": "techgaun @techgaun",
   "bugs": "https://github.com/techgaun/heroku-pgcli/issues",
   "dependencies": {
+    "@heroku-cli/command": "^8.2.6",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "tslib": "^1"
   },
   "devDependencies": {
+    "@heroku-cli/schema": "^1.0.25",
     "@oclif/dev-cli": "^1",
     "@oclif/plugin-help": "^2",
     "@oclif/tslint": "^3",
