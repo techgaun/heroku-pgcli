@@ -15,23 +15,14 @@ pgcli plugin for Heroku CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ heroku plugins:install heroku-pgcli # from npmjs.com
-$ heroku plugins:install https://github.com/techgaun/heroku-pgcli.git # from github
-$ heroku pgcli DATABASE_URL --app some-good-app
-Running pgcli on DATABASE_URL...
-$ heroku pgcli --help
-Connect with Heroku posgtresql db using pgcli
-
+$ npm install -g heroku-pgcli
+$ oclif-example COMMAND
+running command...
+$ oclif-example (-v|--version|version)
+heroku-pgcli/0.1.1 linux-x64 node-v8.12.0
+$ oclif-example --help [COMMAND]
 USAGE
-  $ heroku pgcli
-
-OPTIONS
-  -a, --app=app    (required) the Heroku app to use
-  -h, --help       show CLI help
-  -n, --name=name  the Heroku postgres DB name to use. Default: DATABASE_URL
-
-EXAMPLE
-  $ heroku pg:pgcli DATABASE_URL --app <app_name>
+  $ oclif-example COMMAND
 ...
 ```
 <!-- usagestop -->
