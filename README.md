@@ -16,37 +16,26 @@ pgcli plugin for Heroku CLI
 <!-- usage -->
 ```sh-session
 $ npm install -g heroku-pgcli
-$ oclif-example COMMAND
-running command...
-$ oclif-example (-v|--version|version)
-heroku-pgcli/0.1.0 linux-x64 node-v8.12.0
-$ oclif-example --help [COMMAND]
+$ heroku pgcli DATABASE_URL --app some-good-app
+Running pgcli on DATABASE_URL...
+$ heroku pgcli --help
+Connect with Heroku posgtresql db using pgcli
+
 USAGE
-  $ oclif-example COMMAND
+  $ heroku pgcli
+
+OPTIONS
+  -a, --app=app    (required) the Heroku app to use
+  -h, --help       show CLI help
+  -n, --name=name  the Heroku postgres DB name to use. Default: DATABASE_URL
+
+EXAMPLE
+  $ heroku pg:pgcli DATABASE_URL --app <app_name>
 ...
 ```
 <!-- usagestop -->
-# Commands
-<!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
 
-## `oclif-example hello [FILE]`
+# Development
 
-describe the command here
-
-```
-USAGE
-  $ oclif-example hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/techgaun/heroku-pgcli/blob/v0.1.0/src/commands/hello.ts)_
-<!-- commandsstop -->
+- `heroku plugins:link`
+- `heroku pgcli`
