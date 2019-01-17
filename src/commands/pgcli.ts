@@ -1,4 +1,4 @@
-import {Command, flags, vars} from '@heroku-cli/command'
+import {Command, flags} from '@heroku-cli/command'
 import * as cp from 'child_process'
 
 export default class PGCLI extends Command {
@@ -36,7 +36,7 @@ export default class PGCLI extends Command {
     const {body: configs} = await this.heroku.get(`/apps/${flags.app}/config-vars`)
     const value = configs[name]
 
-    if (value == null) {
+    if (!value) {
       this.error(`Config var for ${name} not found`)
     }
 
