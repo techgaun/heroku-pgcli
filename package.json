@@ -27,6 +27,7 @@
     "node": ">=8.0.0"
   },
   "files": [
+    ".oclif.manifest.json",
     "/lib",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json",
